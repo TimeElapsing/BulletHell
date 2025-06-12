@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22aa4b760cf7414bb2626fb352c2bc2, type: 3}
+  m_Name: Game
+  m_EditorClassIdentifier: 
+  viewPosition: {x: 105.6, y: -43.2, z: 0}
+  viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
+  runtime_GUID: 
+  all_runtime_States:
+    list:
+    - _key: Base Layer
+      _value:
+      - parentStateMachineName: Base Layer
+        name: Any State
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: Any State
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 100
+          width: 200
+          height: 40
+      - parentStateMachineName: Base Layer
+        name: Entry
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: Entry
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 300
+          width: 200
+          height: 40
+      - parentStateMachineName: Base Layer
+        name: Init
+        behaviourInfos: []
+        isBuildInitState: 0
+        buildStateName: 
+        IsSubStateMachine: 0
+        IsDefaultState: 1
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 520
+          y: 120
+          width: 200
+          height: 40
+      - parentStateMachineName: Base Layer
+        name: Game
+        behaviourInfos: []
+        isBuildInitState: 0
+        buildStateName: 
+        IsSubStateMachine: 1
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 520
+          y: 280
+          width: 200
+          height: 40
+    - _key: Game
+      _value:
+      - parentStateMachineName: Game
+        name: Entry
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: Entry
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 300
+          width: 200
+          height: 40
+      - parentStateMachineName: Game
+        name: Any State
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: Any State
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 100
+          width: 200
+          height: 40
+      - parentStateMachineName: Game
+        name: up
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: up
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: Base Layer
+        position:
+          serializedVersion: 2
+          x: 720
+          y: 300
+          width: 200
+          height: 40
+      - parentStateMachineName: Game
+        name: MainMenu
+        behaviourInfos:
+        - typeName: BulletHell.MainMenuState
+          guid: 7ff10ad7b9cae5b4fbed8c809aa50f4a
+        isBuildInitState: 0
+        buildStateName: 
+        IsSubStateMachine: 0
+        IsDefaultState: 1
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 380
+          y: 160
+          width: 200
+          height: 40
+      - parentStateMachineName: Game
+        name: Gaming
+        behaviourInfos: []
+        isBuildInitState: 0
+        buildStateName: 
+        IsSubStateMachine: 1
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 380
+          y: 300
+          width: 200
+          height: 40
+    - _key: Gaming
+      _value:
+      - parentStateMachineName: Gaming
+        name: Entry
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: Entry
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 300
+          width: 200
+          height: 40
+      - parentStateMachineName: Gaming
+        name: Any State
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: Any State
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 100
+          width: 200
+          height: 40
+      - parentStateMachineName: Gaming
+        name: up
+        behaviourInfos: []
+        isBuildInitState: 1
+        buildStateName: up
+        IsSubStateMachine: 0
+        IsDefaultState: 0
+        upMachineName: Game
+        position:
+          serializedVersion: 2
+          x: 600
+          y: 300
+          width: 200
+          height: 40
+      - parentStateMachineName: Gaming
+        name: General
+        behaviourInfos:
+        - typeName: BulletHell.GeneralState
+          guid: 1e11496d785ff4f4faa687bd9e49cf83
+        isBuildInitState: 0
+        buildStateName: 
+        IsSubStateMachine: 0
+        IsDefaultState: 1
+        upMachineName: 
+        position:
+          serializedVersion: 2
+          x: 300
+          y: 260
+          width: 200
+          height: 40
+  all_runtime_Transitions:
+    list:
+    - _key: Base Layer
+      _value:
+      - fromStateName: Init
+        toStateName: Game
+        autoSwitch: 0
+        conditions: []
+    - _key: Game
+      _value:
+      - fromStateName: MainMenu
+        toStateName: Gaming
+        autoSwitch: 0
+        conditions:
+        - targetValue: 0
+          parameterName: GameState
+          compareType: 0
+      - fromStateName: Gaming
+        toStateName: MainMenu
+        autoSwitch: 0
+        conditions:
+        - targetValue: 0
+          parameterName: GameState
+          compareType: 2
+  all_runtime_parameters:
+  - parameterName: GameState
+    Parameter:
+      value: 0
+    parameterType: 1
+  SelectLayers:
+  - Game
+  openGenerator: 1
+  nameSpace: BulletHell
+  className: Gaming
+  path: Assets/_My/Scripts/Controls/GameStates

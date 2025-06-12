@@ -15,7 +15,7 @@ MonoBehaviour:
   IsShowHerarchy: 1
   IsShowReLoadProject: 0
   project: 0
-  nameSpace: YukiFrameWork.Example
+  nameSpace: BulletHell
   IsParent: 0
   assembly: Assembly-CSharp
   assemblies: []

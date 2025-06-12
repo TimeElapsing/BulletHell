@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c05733194851a4f875a1d51ac26136, type: 3}
   m_Name: ExpertCodeConfig
   m_EditorClassIdentifier: 
-  NameSpace: YukiFrameWork.Example
-  FoldPath: Assets/Scripts
-  Name: 
-  ParentType: 0
+  NameSpace: BulletHell
+  FoldPath: Assets/_My/Scripts/Main
+  Name: ThreeStarts
+  ParentType: 1
   levelInterface: 0
   customInterface: 0
   IsScruct: 0
