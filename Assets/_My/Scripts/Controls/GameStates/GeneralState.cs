@@ -20,8 +20,9 @@ namespace BulletHell
 		{
 			await SceneTool.XFABManager.LoadSceneAsync("Game");
 			UIKit.HidePanel<LoadingPanel>();
-			//TODO 打开主要场景UI
-
+			// 打开主要场景UI
+			UIKit.ShowPanel<ForegroundPanel>();
+			var panel = UIKit.OpenPanel<UIPanel>();
 		}
 		public override void OnExit()
 		{

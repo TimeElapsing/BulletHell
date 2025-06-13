@@ -20,11 +20,16 @@ namespace BulletHell
         {
             base.Awake();
 
-            //等待框架开始
-            await ThreeStarts.StartUp();
+            //持久化相机
+            var gameCamera = GameObject.Find("GameCamera");
+            if (gameCamera != null)
+                DontDestroyOnLoad(gameCamera);
 
-            var core = await AssetBundleManager.LoadAssetAsync<RuntimeStateMachineCore>(ThreeStarts.ProjectName, "Game");
-            StateManager.StartMachine("Game", core, typeof(ThreeStarts));
+            //等待框架开始
+            await ThreeStars.StartUp();
+
+            var core = await AssetBundleManager.LoadAssetAsync<RuntimeStateMachineCore>(ThreeStars.ProjectName, "Game");
+            StateManager.StartMachine("Game", core, typeof(ThreeStars));
         }
 
 

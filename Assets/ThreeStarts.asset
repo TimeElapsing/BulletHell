@@ -12,18 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d633f06ec03ca4ea8f9e98a2c00622, type: 3}
   m_Name: ThreeStarts
   m_EditorClassIdentifier: 
-  name: ThreeStarts
+  name: ThreeStars
   displayName: 
   assetBundles:
-  - bundle_name: ui
-    files:
-    - guid: c6ece3011a79eed42a6f6b806c22ee84
-      type: 1
-      filter: 
-    projectName: ThreeStarts
-    bundleType: 0
-    group_name: 
-    bundlePackgeType: 0
   - bundle_name: game
     files:
     - guid: 4a0e2bc997502ae4e9fc3294b4814f9a
@@ -48,6 +39,15 @@ MonoBehaviour:
       type: 1
       filter: 
     projectName: ThreeStarts
+    bundleType: 0
+    group_name: 
+    bundlePackgeType: 0
+  - bundle_name: arts
+    files:
+    - guid: 51f6f1def8391204aba7849d560a66d8
+      type: 1
+      filter: 
+    projectName: ThreeStars
     bundleType: 0
     group_name: 
     bundlePackgeType: 0

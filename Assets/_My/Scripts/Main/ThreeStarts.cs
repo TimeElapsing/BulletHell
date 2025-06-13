@@ -12,12 +12,12 @@ using System;
 using YukiFrameWork.UI;
 namespace BulletHell
 {
-    public class ThreeStarts : Architecture<ThreeStarts>
+    public class ThreeStars : Architecture<ThreeStars>
     {
 
         //可以填写默认进入的场景名称，在架构准备完成后，自动进入
         public override (string, SceneLoadType) DefaultSceneName => default;
-        public override string OnProjectName => "ThreeStarts";
+        public override string OnProjectName => "ThreeStars";
 
         public override void OnInit()
         {

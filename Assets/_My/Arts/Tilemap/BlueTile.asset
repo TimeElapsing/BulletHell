@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Square
+  m_Name: BlueTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 7482667652216324306, guid: b7949cc056e071e418224dfca2614869, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0a8e4ab4a09f24f4da7152ff19d24b05, type: 3}
+  m_Color: {r: 0, g: 0.8782811, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

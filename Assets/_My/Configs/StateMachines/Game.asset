@@ -137,7 +137,9 @@ MonoBehaviour:
           height: 40
       - parentStateMachineName: Game
         name: Gaming
-        behaviourInfos: []
+        behaviourInfos:
+        - typeName: BulletHell.GamingState
+          guid: 5ef885bd6ce82904bbcff81e942d1d99
         isBuildInitState: 0
         buildStateName: 
         IsSubStateMachine: 1

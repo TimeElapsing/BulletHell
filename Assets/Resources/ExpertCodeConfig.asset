@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: ExpertCodeConfig
   m_EditorClassIdentifier: 
   NameSpace: BulletHell
-  FoldPath: Assets/_My/Scripts/Main
-  Name: ThreeStarts
-  ParentType: 1
+  FoldPath: Assets/_My/Scripts/Controls/GameObject
+  Name: MoonBullet
+  ParentType: 0
   levelInterface: 0
-  customInterface: 0
+  customInterface: 1
   IsScruct: 0
-  architecture: 
+  architecture: BulletHell.ThreeStarts
   FoldExport: 0
   IsReturnValueCommand: 0
   ReturnValue: 
