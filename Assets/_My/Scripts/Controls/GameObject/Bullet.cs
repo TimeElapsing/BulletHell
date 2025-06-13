@@ -38,7 +38,6 @@ namespace BulletHell
                 {
                     targetTilemap.SetTile(cellPos, targetTile);
                     lastCell = transform.position;
-                    Debug.Log("染色");
                 }
             }
             if (Vector2.Distance(player.transform.position, transform.position) > maxDistance)

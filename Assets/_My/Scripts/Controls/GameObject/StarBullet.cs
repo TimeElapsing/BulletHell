@@ -16,7 +16,7 @@ namespace BulletHell
         protected override void Awake()
         {
             base.Awake();
-            targetTile = AssetBundleManager.LoadAsset<Tile>(ThreeStars.ProjectName, "YellowTile");
+            targetTile = AssetBundleManager.LoadAsset<Tile>(ThreeStars.ProjectName, "YellowTile"); 
 
         }
 
