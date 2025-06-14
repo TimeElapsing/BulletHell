@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ExpertCodeConfig
   m_EditorClassIdentifier: 
   NameSpace: BulletHell
-  FoldPath: Assets/_My/Scripts/Controls/GameObject
-  Name: MoonBullet
+  FoldPath: Assets/_My/Scripts/Controls/Enemy
+  Name: EnemyPoint
   ParentType: 0
   levelInterface: 0
   customInterface: 1

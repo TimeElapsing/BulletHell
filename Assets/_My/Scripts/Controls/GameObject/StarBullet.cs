@@ -20,11 +20,11 @@ namespace BulletHell
 
         }
 
-        void OnTriggerEnter2D(UnityEngine.Collider2D collision)
+        protected override void OnTriggerEnter2D(UnityEngine.Collider2D collision)
         {
-            if (collision.tag == "Enemy")
+             if (collision.tag == "Enemy")
             {
-
+                collision.GetComponent<Enemy>().Injured(1);
                 OnDestroy();
             }
         }

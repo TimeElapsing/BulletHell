@@ -14,6 +14,11 @@ namespace BulletHell
 
     public class Player : MonoBehaviour
     {
+        [Header("角色设置")]
+        [SerializeField]
+        protected float health = 10f;
+        [SerializeField]
+        public bool isDead = false;
         [Header("发射点设置")]
         //以右侧为起始0度
         private GameObject shootPoint;
@@ -26,6 +31,7 @@ namespace BulletHell
         private int direction = 1;
 
         [Header("发射子弹设置")]
+        private Transform bulletParent;
         //子弹预制体
         protected GameObject bulletPre;
         protected float bulletSpeed = 3f;
@@ -39,6 +45,7 @@ namespace BulletHell
         protected virtual void Awake()
         {
             shootPoint = transform.GetChild(0).gameObject;
+            bulletParent = GameObject.Find("BulletParent").transform;
         }
 
         void Update()
@@ -48,6 +55,8 @@ namespace BulletHell
             {
                 Shoot();
             }
+            if (health < 0)
+                isDead = true;
         }
 
         //更新射击方位
@@ -69,7 +78,7 @@ namespace BulletHell
 
         private bool CanShoot()
         {
-            if (attackCoolDown < Time.time - timer)
+            if (attackCoolDown < Time.time - timer && !isDead) 
                 return true;
             else
                 return false;
@@ -78,7 +87,7 @@ namespace BulletHell
 
         private void Shoot()
         {
-            var bullet = GameObjectLoader.Load(bulletPre, transform).GetComponent<Bullet>();
+            var bullet = GameObjectLoader.Load(bulletPre, bulletParent).GetComponent<Bullet>();
             var dir = (shootPoint.transform.position - transform.position).normalized;
 
             bullet.Init(dir, bulletSpeed, shootPoint.transform.position, maxDistance, this);
@@ -91,6 +100,10 @@ namespace BulletHell
         public virtual void UseSkill()
         {
 
+        }
+        public virtual void Injured(float _num)
+        {
+            health -= _num;
         }
     }
 }
